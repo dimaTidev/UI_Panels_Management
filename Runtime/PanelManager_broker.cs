@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [DefaultExecutionOrder(-100)]
-public class Panel_broker : MonoBehaviour
+public class PanelManager_broker : MonoBehaviour
 {
     [SerializeField] PanelManagerUI panelManager = null;
     void Awake()

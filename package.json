@@ -1,7 +1,7 @@
 {
     "name": "com.dimati.ui.management",
     "displayName": "UI Panels Management",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "unity": "2018.4",
     "unityRelease": "",
     "description": "",
@@ -13,5 +13,22 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/dimaTidev/UI_Panels_Management.git"
-    }
+    },
+    "samples": [
+        {
+            "displayName": "PanelManager scriptableObject",
+            "description": "PanelManager scriptableObject",
+            "path": "Samples~/PanelManager"
+        },
+        {
+            "displayName": "PanelManager_Setup",
+            "description": "Example scene with full panel manager setup",
+            "path": "Samples~/PanelManager_Setup"
+        },
+        {
+            "displayName": "Panel Hide Event",
+            "description": "Example scene with Panel Hide Event setup",
+            "path": "Samples~/PanelHideEvent"
+        }
+    ]
 }

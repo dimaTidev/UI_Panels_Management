@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PanelManager", menuName = "ScriptableObjects/PanelManager")]
+[CreateAssetMenu(fileName = "PanelManager", menuName = "ScriptableObjects/PanelManagement/PanelManager")]
 public class PanelManagerUI : ScriptableObject
 {
     GameObject mainPanel;
@@ -41,6 +41,22 @@ public class PanelManagerUI : ScriptableObject
         else
             Redo();
     }
+
+    public void Redo(GameObject redoFrom)
+    {
+        if (history.Count == 0)
+            return;
+
+        if (!redoFrom)
+        {
+            Redo();
+            return;
+        }
+
+        if(history.Peek() == redoFrom)
+            Redo();
+    }
+
     public void Redo()
     {
         if (history.Count > 1 && history.Peek() != null)
@@ -58,14 +74,13 @@ public class PanelManagerUI : ScriptableObject
     {
         if (!mainPanel)
             return;
-        if (history.Count > 0)
+        if (history.Count > 0 && history.Peek() != null)
             history.Peek().SetActive(false);
 
         history.Clear();
         history.Push(mainPanel);
         mainPanel.SetActive(true);
     }
-
     
     public void SetMainPanel(GameObject panel)
     {

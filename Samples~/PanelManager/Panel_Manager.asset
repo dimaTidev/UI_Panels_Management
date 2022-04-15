@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be2bd8a3fbbc471449b97bfbc2e69480, type: 3}
+  m_Name: Panel_Manager
+  m_EditorClassIdentifier: 
+  aClip_next: {fileID: 8300000, guid: 461160e1974133246bc7e32f2ad6d003, type: 3}
+  aClip_redo: {fileID: 8300000, guid: 03060f973bbe89c49b8e35240f7479ae, type: 3}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be2bd8a3fbbc471449b97bfbc2e69480, type: 3}
-  m_Name: PanelManager
+  m_Name: Example_panelManager
   m_EditorClassIdentifier: 
-  aClip_next: {fileID: 8300000, guid: 461160e1974133246bc7e32f2ad6d003, type: 3}
-  aClip_redo: {fileID: 8300000, guid: 03060f973bbe89c49b8e35240f7479ae, type: 3}
+  aClip_next: {fileID: 0}
+  aClip_redo: {fileID: 0}
